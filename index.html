@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Timestamp Microservice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timestamp Microservice</h1>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Pass a string as a parameter with a natural language date
+            </div>
+            <div class="panel-body">
+                <code>https://timestamp-ms-makkoli.c9users.io/October%2010,%202016</code>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Pass a string as a parameter with a unix timestamp
+            </div>
+            <div class="panel-body">
+                <code>https://timestamp-ms-makkoli.c9users.io/1450137600</code>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Output of both examples
+            </div>
+            <div class="panel-body">
+                <code>{ "unix": 1450137600, "natural": "October 10, 2016" }</code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
