@@ -1,20 +1,22 @@
 <html>
 <head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
   <title>Timestamp Microservice</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <h1>Timestamp Microservice</h1>
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
             <div class="panel-heading">
-                Pass a string as a parameter with a natural language date
+                Pass a string as a parameter with a natural language date (ex: January 1, 2016)
             </div>
             <div class="panel-body">
-                <code>https://timestamp-ms-makkoli.c9users.io/October%2010,%202016</code>
+                <code>https://timestamp-ms-makkoli.c9users.io/December%2015,%202015</code>
             </div>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-info">
             <div class="panel-heading">
                 Pass a string as a parameter with a unix timestamp
             </div>
@@ -22,12 +24,12 @@
                 <code>https://timestamp-ms-makkoli.c9users.io/1450137600</code>
             </div>
         </div>
-        <div class="panel panel-primary">
+        <div class="panel panel-success">
             <div class="panel-heading">
                 Output of both examples
             </div>
             <div class="panel-body">
-                <code>{ "unix": 1450137600, "natural": "October 10, 2016" }</code>
+                <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code>
             </div>
         </div>
     </div>
