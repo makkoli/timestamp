@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
 app.get('/:date', function (req, res) {
   res.status(200);
   res.set('Content-Type', 'text/plain');
-  res.charset = 'utf-8';;
+  res.charset = 'utf-8';
   res.send(retrieveDate.getDate(req.params.date));
 });
 
