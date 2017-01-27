@@ -2,6 +2,8 @@ var express = require('express');
 var retrieveDate = require('./retrievedate');
 var app = express();
 
+var port = process.env.PORT || 8000;
+
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
@@ -13,4 +15,4 @@ app.get('/:date', function (req, res) {
   res.send(retrieveDate.getDate(req.params.date));
 });
 
-app.listen(8080);
+app.listen(port);
